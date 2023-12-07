@@ -1,0 +1,22 @@
+<p>showproduct !</p>
+
+
+<div *ngFor="let a of ProductList; let i = index" class="card">
+    <div *ngIf="id == a.id">
+      <li>
+        ID:{{ a.id }}
+      </li>
+      <li>
+        Title:{{ a.title }}
+      </li>
+      <li>
+       quantity: {{ a.quantity }}
+      </li>
+      <li>
+       price: {{ a.price  }}
+      </li>
+      <li>
+        like :{{ a.like }}
+      </li>
+    </div>
+  </div>

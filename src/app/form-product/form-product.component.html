@@ -1,0 +1,52 @@
+<p>form-product works!</p>
+<div class="container">
+    <form [formGroup]="formProduct">
+      
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">id</span>
+            </div>
+            <input type="text" aria-label="Num Appart"  class="form-control" formControlName="id">
+           
+          </div>
+         <br> 
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">title</span>
+            </div>
+            <input type="text" aria-label="First name" class="form-control" formControlName="title">
+           
+          </div>
+          <br><div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">price</span>
+            </div>
+            <input type="text" aria-label="Num Appart"  class="form-control" formControlName="price">
+           
+          </div>
+         <br> 
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">like</span>
+            </div>
+            <input type="text" aria-label="First name" class="form-control" formControlName="like">
+           
+          </div>
+          <br>
+          
+    
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">quantity</span>
+            </div>
+            <input type="text" aria-label="description" class="form-control" formControlName="quantity">
+            
+          </div>
+         
+<br>
+          <input type="submit" aria-label="add"  class="bg-primary" value="add" (click)="add()">
+
+    </form>
+
+
+</div>

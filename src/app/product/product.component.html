@@ -1,0 +1,18 @@
+<h2>Product List</h2>
+
+<table class="table">
+    <div>
+ <tr><th>Id</th><th>Title</th><th>Price</th><th>quantity</th><th>like</th></tr>
+ <tbody *ngFor="let Product of ProductList;let i=index">  
+<td>{{Product.id}}</td>
+<td>{{Product.title}}</td>
+<td>{{Product.price}}</td>
+<td>{{Product.quantity}}</td>
+<td>{{Product.like}}</td>
+<button class="btn btn-success"[routerLink]="['show',Product.id]" class="btn btn-primary">Show</button>
+</div>
+
+</table>
+<button class="btn btn-success"  routerLinkActivate="active" routerLink="/forulaireajout">AddProduct</button>
+
+
